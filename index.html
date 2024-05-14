@@ -1,63 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI for Education</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS -->
   <style>
     /* Font magique pour le brand */
     .navbar-brand {
-      font-family: 'YourMagicalFont', sans-serif; /* Remplacez 'YourMagicalFont' par le nom de la police magique que vous souhaitez utiliser */
+      font-family: 'Montserrat', sans-serif;
+      color: cadetblue;
+      /* Remplacez 'YourMagicalFont' par le nom de la police magique que vous souhaitez utiliser */
     }
+
     /* Arrière-plan blanc pour la navbar */
     .navbar {
-      background-color: #ffffff; /* Blanc */
+      background-color: #ffffff;
+      /* Blanc */
     }
+
+    div ul li a {
+      color: #0e213d;
+    }
+
     /* Fond gris pour le reste du site */
     body {
-      background-color: #f2f2f2; /* Gris clair */
+      background-color: #f2f2f2;
+      /* Gris clair */
     }
   </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <!-- Brand -->
-      <a class="navbar-brand" href="#">AI-Edu</a>
+      <a class="navbar-brand fs-2" href="#" style="color:orange; font-weight: bolder; ">AI-Edu</a>
 
       <!-- Toggler/collapsible Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+      <div class="collapse navbar-collapse" id="navbarNav" style="font-weight: bolder;">
+        <ul class="navbar-nav mx-auto" style="color: #0e213d;">
           <li class="nav-item">
-            <a class="nav-link" href="#">Accueil</a>
+            <a class="nav-link" href="#" style="color: #0e213d;">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Communauté</a>
+            <a class="nav-link" href="#" style="color: #0e213d;">Communauté</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: #0e213d;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ressources
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" style="color: #0e213d;" href="#">Cours</a></li>
+              <li><a class="dropdown-item" href="#">Exercices </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Fiches </a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Qui sommes-nous?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ressources</a>
+            <a class="nav-link" href="#" style="color: #0e213d;">Qui sommes-nous?</a>
           </li>
         </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">S'inscrire</a>
+        <ul class="navbar-nav ml-auto" style="font-weight: bolder;">
+          <li class="nav-item mx-2">
+            <a class="btn  " style="font-weight: bolder; background-color: #0e213d; color: #f2f2f2;" role="button" aria-disabled="true">S'inscrire</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Se connecter</a>
+            <a class="btn  " style="background-color: orange; color: white; font-weight: bolder;" role="button"
+              aria-disabled="true">Se connecter</a>
           </li>
         </ul>
       </div>
@@ -69,4 +97,5 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
