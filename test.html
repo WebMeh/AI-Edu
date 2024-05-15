@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            height: 100vh;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            padding: 10px;
+            border-bottom: 1px solid #444;
+        }
+        .sidebar li:hover {
+            background-color: #444;
+            cursor: pointer;
+        }
+        .sidebar li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .main-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <ul>
+                    <li><i class="fas fa-book"></i> <a href="#">Mes cours</a></li>
+                    <li><i class="fas fa-file"></i> <a href="#">Mes ressources</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10 main-content">
+                <!-- Contenu principal ici -->
+                <h1>Bienvenue sur votre dashboard !</h1>
+                <p>Vous pouvez ajouter du contenu ici.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
