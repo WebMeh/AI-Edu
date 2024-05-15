@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Ajax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <title>Register</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand fs-2" href="index.html" style="color:orange; font-weight: bolder; ">AI-Edu</a>
+
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav" style="font-weight: bolder;">
+                <ul class="navbar-nav mx-auto" style="color: #0e213d;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: #0e213d;">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #0e213d;">Communauté</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #0e213d;" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Ressources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" style="color: #0e213d;" href="#">Cours</a></li>
+                            <li><a class="dropdown-item" href="#">Exercices </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Fiches </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #0e213d;">Qui sommes-nous?</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto" style="font-weight: bolder;">
+                    <li class="nav-item mx-2">
+                        <a href="register.html" class="btn  "
+                            style="font-weight: bolder; background-color: #0e213d; color: #f2f2f2;" role="button"
+                            aria-disabled="true">S'inscrire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="btn  "
+                            style="background-color: orange; color: white; font-weight: bolder;" role="button"
+                            aria-disabled="true">Se connecter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section: Design Block -->
+    <section class="">
+        <!-- Jumbotron -->
+        <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+            <div class="container">
+                <div class="row gx-lg-5 align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <img src="images/register.svg" class="img-fluid" alt="Phone image">
+                    </div>
+
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="card">
+                            <div class="card-body py-5 px-md-5">
+                                <form>
+                                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div data-mdb-input-init class="form-outline">
+                                                <input placeholder="Votre Prénom" type="text" id="form3Example1"
+                                                    class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div data-mdb-input-init class="form-outline">
+                                                <input placeholder="Votre nom" type="text" id="form3Example2"
+                                                    class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input placeholder="Votre address électronique " type="email" id="form3Example3"
+                                            class="form-control" />
+                                    </div>
+
+                                    <!-- Password input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input placeholder="Votre Mot de passe" type="password" id="form3Example4"
+                                            class="form-control" />
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                                        class="btn btn-primary btn-block mb-4">
+                                        S'inscrire
+                                    </button>
+
+                                    <!-- Register buttons -->
+                                    <div class="text-center">
+                                        <p style="color: #0e213d; font-family:Arial, Helvetica, sans-serif;"> ou
+                                            s'inscrire avec :</p>
+                                        <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                            class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </button>
+
+                                        <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                            class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-google"></i>
+                                        </button>
+
+                                        <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                            class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-twitter"></i>
+                                        </button>
+
+                                        <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                            class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Jumbotron -->
+    </section>
+    <!-- Section: Design Block -->
+</body>
+
+</html>
