@@ -40,6 +40,17 @@
             background-color: #f2f2f2;
             /* Gris clair */
         }
+
+        #courseForm {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -144,9 +155,15 @@
             <!-- Zone principale pour afficher la liste des cours -->
             <div class="col-lg-9">
                 <div class="row">
-                    <div class="col-md-12 mb-4">
+                    <!-- Barre de recherche -->
+                    <div class="col-md-6 mb-4">
+                        <input type="text" class="form-control" placeholder="Rechercher un cours">
+                    </div>
+
+                    <div class="col-md-6 mb-4 text-right">
                         <!-- Bouton pour générer un cours avec AI -->
-                        <button type="button" class="btn btn-primary float-right mb-3" style="font-weight: bold;">
+                        <button id="generateCourseBtn" type="button" class="btn btn-primary float-right mb-3"
+                            style="font-weight: bold;">
                             Générer votre cours
                             <i class="fa-solid fa-folder-plus fs-4 fx-2"></i>
                         </button>
@@ -158,77 +175,67 @@
                         <div class="card">
                             <img src="images/algorithme-cours.jpg" class="card-img-top" alt="Image du cours">
                             <div class="card-body">
-                                <h5 class="card-title">Nom du cours</h5>
+                                <h5 class="card-title">Algorithmique</h5>
                                 <p class="card-text">Description du cours.</p>
                                 <a href="#" class="btn btn-primary">Voir le cours</a>
                             </div>
                         </div>
                     </div>
+
                     <!-- Exemple de carte de cours -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="images/algorithme-cours.jpg" class="card-img-top" alt="Image du cours">
                             <div class="card-body">
-                                <h5 class="card-title">Nom du cours</h5>
+                                <h5 class="card-title">Algorithmique</h5>
                                 <p class="card-text">Description du cours.</p>
-
-                                <!-- Exemple de carte de cours -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card">
-                                        <img src="images/algorithme-cours.jpg" class="card-img-top"
-                                            alt="Image du cours">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Nom du cours</h5>
-                                            <p class="card-text">Description du cours.</p>
-                                            <a href="#" class="btn btn-primary">Voir le cours</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Exemple de carte de cours -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card">
-                                        <img src="images/algorithme-cours.jpg" class="card-img-top"
-                                            alt="Image du cours">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Nom du cours</h5>
-                                            <p class="card-text">Description du cours.</p>
-                                            <a href="#" class="btn btn-primary">Voir le cours</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Exemple de carte de cours -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card">
-                                        <img src="images/algorithme-cours.jpg" class="card-img-top"
-                                            alt="Image du cours">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Nom du cours</h5>
-                                            <p class="card-text">Description du cours.</p>
-                                            <a href="#" class="btn btn-primary">Voir le cours</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Exemple de carte de cours -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="card">
-                                        <img src="images/algorithme-cours.jpg" class="card-img-top"
-                                            alt="Image du cours">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Nom du cours</h5>
-                                            <p class="card-text">Description du cours.</p>
-                                            <a href="#" class="btn btn-primary">Voir le cours</a>
-                                        </div>
-                                    </div>
-                                </div> <a href="#" class="btn btn-primary">Voir le cours</a>
+                                <a href="#" class="btn btn-primary">Voir le cours</a>
                             </div>
                         </div>
                     </div>
+
                     <!-- Exemple de carte de cours -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="images/algorithme-cours.jpg" class="card-img-top" alt="Image du cours">
                             <div class="card-body">
-                                <h5 class="card-title">Nom du cours</h5>
+                                <h5 class="card-title">Algorithmique</h5>
+                                <p class="card-text">Description du cours.</p>
+                                <a href="#" class="btn btn-primary">Voir le cours</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exemple de carte de cours -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/data-strucures-cours.jpg" class="card-img-top" alt="Image du cours">
+                            <div class="card-body">
+                                <h5 class="card-title">Structures de données</h5>
+                                <p class="card-text">Description du cours.</p>
+                                <a href="#" class="btn btn-primary">Voir le cours</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exemple de carte de cours -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/data-strucures-cours.jpg" class="card-img-top" alt="Image du cours">
+                            <div class="card-body">
+                                <h5 class="card-title">Structures de données</h5>
+                                <p class="card-text">Description du cours.</p>
+                                <a href="#" class="btn btn-primary">Voir le cours</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exemple de carte de cours -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/data-strucures-cours.jpg" class="card-img-top" alt="Image du cours">
+                            <div class="card-body">
+                                <h5 class="card-title">Structures de données</h5>
                                 <p class="card-text">Description du cours.</p>
                                 <a href="#" class="btn btn-primary">Voir le cours</a>
                             </div>
@@ -237,6 +244,34 @@
                 </div>
             </div>
     </section>
+
+    <!-- Formulaire pour générer un cours -->
+    <div id="courseForm" class="course-form d-none">
+        <form style="width: 26rem;">
+            <!-- Name input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form4Example1">Spécialté ou domaine</label>
+
+                <input type="text" id="form4Example1" class="form-control" />
+            </div>
+
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form4Example2">Titre du cours</label>
+                <input type="email" id="form4Example2" class="form-control" />
+            </div>
+
+            <!-- Message input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form4Example3">Description du cours</label>
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="button" class="btn btn-success btn-block mb-4">Génerer le cours avec AI-Edu</button>
+        </form>
+    </div>
+
 
     <!-- Footer -->
     <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
@@ -359,6 +394,20 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+    <script>
+        document.getElementById('generateCourseBtn').addEventListener('click', function () {
+            // Afficher le formulaire
+            document.getElementById('courseForm').classList.remove('d-none');
+        });
+
+        // Masquer le formulaire lorsque l'utilisateur clique en dehors du formulaire
+        document.addEventListener('click', function (event) {
+            if (!event.target.closest('#courseForm') && !event.target.closest('#generateCourseBtn')) {
+                document.getElementById('courseForm').classList.add('d-none');
+            }
+        });
+    </script>
 </body>
 
 </html>
