@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace étudiant</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .user-name {
+            margin-top: 2px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <div class="row">
+            <div class="col-md-1 sidebar">
+
+            </div>
+            <div class="col-md-10 main-content">
+                <div class="d-flex justify-content-end ">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="../images/profile.png" alt="Avatar" class="user-avatar" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <p class="user-name ">Nom </p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Voir le profil</a>
+                        <a class="dropdown-item" href="#">Éditer le profil</a>
+                    </div>
+                </div>
+                <!-- Contenu principal ici -->
+                <h1 class="text-center">Bienvenue sur votre espace étudiant !</h1>
+                <!-- Le contenu de la page d'accueil -->
+                <div class="container">
+                    <div class="row my-4">
+                        <div class="col-md-4">
+                            <div class="card" style="background-color: #0e213d; color: antiquewhite;">
+                                <div class="card-body">
+                                    <i class="fas fa-cogs"></i>
+                                    <h5 class="card-title">Générer une feuille d'exercices</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="background-color: #0e213d; color: antiquewhite;">
+                                <div class="card-body">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <h5 class="card-title">Mes résultats</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="background-color: #0e213d; color: antiquewhite;">
+                                <div class="card-body">
+                                    <i class="fas fa-book"></i>
+                                    <h5 class="card-title">Mes cours</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card" style="background-color: #0e213d; color: antiquewhite;">
+                                <div class="card-body">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <h5 class="card-title">Mes devoirs</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="background-color: #0e213d; color: antiquewhite;">
+                                <div class="card-body">
+                                    <i class="fas fa-users"></i>
+                                    <h5 class="card-title">Visiter la communauté</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="background-color: #0e213d; color: antiquewhite;">
+                                <div class="card-body">
+                                    <i class="fas fa-cogs"></i>
+                                    <h5 class="card-title">Prévoir la plateforme AI-EDU</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
